@@ -1,0 +1,33 @@
+\documentclass{article}
+
+\usepackage{natbib}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+Maluki Muthusi Maluki
+\newline
+P15/81741/2017
+
+\begin{center}
+    \textbf{AES, Rajndael Algorithm}
+\end{center}
+
+% introduction about the algorithm
+Advanced Encryption Standard is an encryption specification that was standardized by the U.S NIST in 2001. It is a variant of the Rajndael block cipher that was developed by Vincent Rijmen and and Joan Daemen, who submitted their proposal to NIST during AES selection process, \citep{Daemen2002}. AES with 10 rounds was the fastest algorithm among the five choice that made it to the finalist, \citep[p.~9]{Schneier2000}. The algorithm was chosen because of its speed and security strength.
+
+AES uses a symmetric key algorithm. It is a superset of DES algorithm, performs six times faster. AES does not suffer from an algebraic attach, \citep{ferguson}. AES uses 10, 12, 14 rounds of encreption for key sizes 128, 192 and 256 bits. This enables flexibility in its implementation, adopting to the different use cases.
+
+% why it was selected, its key features
+A system that uses AES bases its security on the hardness of breaking the cipher  blocks. The larger the cipher block the harder the problem, hence the more secure the system is. The data is guranteed to be secure over a certain period of time, due to computational power limitations required to break the algorithm, \citep{website:GeorgeOu}.
+
+We cannot say that AES is a perfect cryptographic algorithm, since it can theoretically be broken, \citep{Schneier2000}. We can feel safe using AES because it can protect data for the next 50 years, or over our lifetime period. For example, when used to protect data in transaction, that data becomes obsolete very quickly. Hence even if the algorithm was to be broken after 10 years since it was used to protect that data, the information would be less relevant.
+
+% use cases
+AES has been used to protect data in the WEB. SSL/TLS specifies AES in its standard. It is used in Wi-Fi as part of WPA2, VPN implementations, operating system file systems and in mobile applications, among many other use cases. So far there has been not a single incident reported of the algorithm compromised, or hacked.
+
+
+\bibliography{main}
+\bibliographystyle{agsm}
+
+\end{document}
